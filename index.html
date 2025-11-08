@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vacation Countdown!</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PAGE 1: THE LOGIN SCREEN -->
+    <div id="login-page" class="page">
+        <div class="container">
+            <h1>Shhh... It's a Secret!</h1>
+            <p>Enter the secret password to see the vacation countdown!</p>
+            <form id="login-form">
+                <input type="password" id="password-input" placeholder="Secret Password" required>
+                <button type="submit">Unlock!</button>
+            </form>
+            <p id="error-message" class="error">Oops! That's not it. Try again!</p>
+        </div>
+    </div>
+
+    <!-- PAGE 2: THE COUNTDOWN SCREEN -->
+    <div id="timer-page" class="page hidden">
+        <div class="container">
+            <h1>Boy's Trip!</h1>
+            <h2 id="timer-subtitle">How long until the fun begins?</h2>
+
+            <div id="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <p>DAYS</p>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <p>HOURS</p>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <p>MINUTES</p>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* --- Basic Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* --- Container for Content --- */
+.container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+/* --- Page Visibility --- */
+.page {
+    transition: opacity 0.5s ease-in-out;
+}
+.hidden {
+    display: none;
+}
+
+/* --- Login Page Styles --- */
+#login-form input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+#login-form button {
+    width: 85%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #4facfe;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#login-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    color: #ff6b6b;
+    margin-top: 1rem;
+    font-weight: 600;
+    display: none; /* Hidden by default */
+}
+
+/* --- Countdown Timer Styles --- */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#countdown div {
+    text-align: center;
+}
+
+#countdown span {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+    display: block;
+}
+
+#countdown p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* --- Responsive Design for Smaller Screens --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #countdown {
+        gap: 1rem;
+    }
+    #countdown span {
+        font-size: 3.5rem;
+    }
+}
