@@ -24,10 +24,8 @@ You only need a web browser (like Chrome, Firefox, or Safari) and a text editor 
 
 1.  **Clone or Download this Repository:**
     ```bash
-    git clone https://github.com/your-username/vacation-timer.git
+    git clone https://github.com/millerjl1980/vacation-timer.git
     ```
-    *(Replace `your-username` with your actual GitHub username)*
-    *Alternatively, you can download the project as a ZIP file and extract it.*
 
 2.  **Navigate to the Project Directory:**
     ```bash
